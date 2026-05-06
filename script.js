@@ -97,7 +97,7 @@ function WPM(time){
     var seconds = Math.floor(time/1000);//convert to seconds
     var typedString = testArea.value;
     var characters = typedString.length;
-    WordsPerMin = Math.floor((characters / 5) / (time/60));//calc WPM
+    WordsPerMin = Math.floor((characters / 5) / (seconds/60));//calc WPM
     document.getElementById("WPM").textContent = WordsPerMin;
 }
 
